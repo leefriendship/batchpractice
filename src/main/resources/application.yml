@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    hikari:
+       jdbc-url: jdbc:oracle:thin:@127.0.0.1:1521:XE
+       username: EAN
+       password: EAN
+       driver-class-name: oracle.jdbc.driver.OracleDriver
+
